@@ -22,27 +22,4 @@ namespace BillingManagement.UI
 
     }
 
-    /*public static class DbContextExtensions
-    {
-        public static bool IsDirty(this DbContext context, object o)
-        {
-            Customer c = o as Customer;
-
-            Contract.Requires<ArgumentNullException>(context != null);
-
-            IEnumerable<EntityEntry> res = from e in context.ChangeTracker.Entries()
-                                           where e.State.HasFlag(EntityState.Added) ||
-                                               e.State.HasFlag(EntityState.Modified) ||
-                                               e.State.HasFlag(EntityState.Deleted)
-                                           select e;
-
-            if (res.Any())
-                return true;
-
-            return false;
-
-        }
-
-    }*/
-
 }
